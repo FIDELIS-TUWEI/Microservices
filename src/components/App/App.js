@@ -52,6 +52,11 @@ class App extends React.Component {
     tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
     this.setState({ SearchResults: track });
   }
+
+  doThese(track) {
+    this.addTrack(track);
+    this.removeTrack(track);
+  }
 }
 
 function App() {
