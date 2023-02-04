@@ -57,6 +57,10 @@ class App extends React.Component {
     this.addTrack(track);
     this.removeTrack(track);
   }
+
+  updatePlayListName(name) {
+    this.setState({ updatePlayListName: name });
+  }
 }
 
 function App() {
