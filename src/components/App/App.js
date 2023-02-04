@@ -46,6 +46,12 @@ class App extends React.Component {
     tracks.unshift(track);
     this.setState({ PlayListTracks: tracks });
   }
+
+  removeTrackSearch(track) {
+    let tracks = this.state.SearchResults;
+    tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
+    this.setState({ SearchResults: track });
+  }
 }
 
 function App() {
