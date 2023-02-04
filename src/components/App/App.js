@@ -75,8 +75,13 @@ class App extends React.Component {
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <h1>
+        <a href='http://localhost:3000'>Music</a>
+      </h1>
+      <div className="App">
+        <SearchBar onSearch={this.search} />
+      </div>
     </div>
   );
 }
