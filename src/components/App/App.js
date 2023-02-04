@@ -23,6 +23,12 @@ class App extends React.Component {
     this.savePlayList = this.savePlayList.bind(this);
     this.removeTrackSearch = this.removeTrackSearch(this);
   }
+
+  search(term) {
+    Spotify.search(term).then(SearchResults => {
+      this.setState({ SearchResults: SearchResults });
+    });
+  }
 }
 
 function App() {
