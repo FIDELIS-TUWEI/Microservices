@@ -81,6 +81,9 @@ function App() {
       </h1>
       <div className="App">
         <SearchBar onSearch={this.search} />
+        <div className='App-playlist'>
+          <SearchResults searchResults={this.state.SearchResults} onAdd={this.state.doThese} />
+        </div>
       </div>
     </div>
   );
