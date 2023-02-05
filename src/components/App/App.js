@@ -82,7 +82,14 @@ function App() {
       <div className="App">
         <SearchBar onSearch={this.search} />
         <div className='App-playlist'>
-          <SearchResults searchResults={this.state.SearchResults} onAdd={this.state.doThese} />
+          <SearchResults SearchResults={this.state.SearchResults} onAdd={this.state.doThese} />
+          <PlayList 
+            PlayListTracks={this.state.PlayListTracks} 
+            onNameChange={this.updatePlayListName}
+            onRemove={this.removeTrack}
+            onSave={this.savePlayList}
+          
+          />
         </div>
       </div>
     </div>
