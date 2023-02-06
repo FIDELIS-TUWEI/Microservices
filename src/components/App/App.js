@@ -71,29 +71,29 @@ class App extends React.Component {
       });
     });
   }
-}
 
-function App() {
-  return (
-    <div>
-      <h1>
-        <a href='http://localhost:3000'>Music</a>
-      </h1>
-      <div className="App">
-        <SearchBar onSearch={this.search} />
-        <div className='App-playlist'>
-          <SearchResults SearchResults={this.state.SearchResults} onAdd={this.state.doThese} />
-          <PlayList 
-            PlayListTracks={this.state.PlayListTracks} 
-            onNameChange={this.updatePlayListName}
-            onRemove={this.removeTrack}
-            onSave={this.savePlayList}
-          
-          />
+  render() {
+    return (
+      <div>
+        <h1>
+          <a href='http://localhost:3000'>Music</a>
+        </h1>
+        <div className="App">
+          <SearchBar onSearch={this.search} />
+          <div className='App-playlist'>
+            <SearchResults SearchResults={this.state.SearchResults} onAdd={this.state.doThese} />
+            <PlayList 
+              PlayListTracks={this.state.PlayListTracks} 
+              onNameChange={this.updatePlayListName}
+              onRemove={this.removeTrack}
+              onSave={this.savePlayList}
+            
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
