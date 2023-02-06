@@ -68,7 +68,7 @@ class App extends React.Component {
       this.setState({
         updatePlayListName: "New Playlist",
         PlayListTracks: []
-      })
+      });
     });
   }
 }
