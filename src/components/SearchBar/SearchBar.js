@@ -37,7 +37,10 @@ class SearchBar extends React.Component {
                     onChange={this.handleTermChange} 
                     onKeyUp={this.handleEnter} 
                 />
-                <button className='SearchButton' onClick={this.search}>
+                <button 
+                    className='SearchButton' 
+                    onClick={this.search}
+                >
                     SEARCH
                 </button>
             </div>
