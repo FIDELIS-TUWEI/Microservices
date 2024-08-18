@@ -1,5 +1,5 @@
 const express = require("express");
-const communicator = require("../communicator/");
+const communicator = require("../communicator");
 const app = express();
 const PORT = process.env.PORT || 5002;
 
